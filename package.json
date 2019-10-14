@@ -1,6 +1,6 @@
 {
   "name": "botland-minifier",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "A Minifier for Botland scripts",
   "main": "bin/index.js",
   "bin": {
@@ -13,7 +13,8 @@
   "dependencies": {
     "terser": "^4.3.8",
     "filesystem": "^1.0.0",
-    "yargs": "^13.2.0"
+    "yargs": "^13.2.0",
+    "chalk": "^2.4.2"
   },
   "devDependencies": {},
   "author": "Ron D. Lite",

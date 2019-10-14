@@ -20,3 +20,19 @@ Examples:
 -  blify -i defense.js -o defense.min.js
 -  blify -i defense.js  -> will create defense.min.js
 
+
+In your code: 
+
+Wrap any statement like debugLog that you don't want in your minified code in a DEBUG block like this:
+
+```
+if(DEBUG){
+/* code to be executed */
+  }
+
+```
+
+this will remove that block from the minified code.
+Comments will be removed by default (unless they contain copyright format statements)
+
+
