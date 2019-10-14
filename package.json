@@ -6,6 +6,10 @@
   "bin": {
     "blify": "./bin/index.js"
   },
+"repository": {
+  "type" : "git",
+  "url" : "https://github.com/rondlite/botland-minifier"
+},
   "dependencies": {
     "terser": "^4.3.8",
     "filesystem": "^1.0.0",
