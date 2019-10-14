@@ -2,6 +2,8 @@
 
 Install:  npm install -g botland-minifier
 
+Binary install: Download the binary for your platform and rename it to _blify_ for ease of use.
+
 Usage: blify -i <input file>
 
 
