@@ -1,6 +1,6 @@
 {
   "name": "botland-minifier",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Minifier for Botland scripts",
   "main": "bin/index.js",
   "bin": {

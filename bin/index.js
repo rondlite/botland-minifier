@@ -17,8 +17,8 @@ const opts = yargs
 var options = {
     compress:{
     sequences: false,
-    conditionals: false,
-    pure_funcs: ['debugLog']
+    conditionals: false
+//    pure_funcs: ['debugLog']
    },
    mangle: {
 
