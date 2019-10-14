@@ -1,6 +1,9 @@
 ## Botland Minifier
 
+Install:  npm install -g botland-minifier
+
 Usage: blify -i <input file>
+
 
 Options:
 -  --help        Show help                                              [boolean]
