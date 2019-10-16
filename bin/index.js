@@ -14,9 +14,11 @@ const opts = yargs
  .option("o", { alias: "output", describe: "Minified output filename", type: "string", demandOption: false })
  .option('s', { alias: "screen", describe: "Echoes the output to the screen instead of to a file", type: "boolean", demandOption: false })
  .option('v', { alias: "verbose", describe: "Shows warnings",type: "boolean", demandOption: false})
+ .option('c', { alias: "compress", describe: "Add semicolons and compress script to one line",type:"boolean",demandOption: false})
  .option('d', { alias: "debug", describe: "Do not remove debugLog (for debugging)",type: "boolean", demandOption: false})
  .epilog(chalk.yellow("made for Bot Land - Bot Land username: Ron - no copyright 2019"))
  .argv;
+
 
 
 var inputFile = process.cwd() + `/${opts.input}`;
@@ -40,12 +42,14 @@ var options = {
     sequences: false,
     conditionals: false,
     drop_console: true,
-    dead_code:true
+    dead_code:true,
+    loops: false
 },
     output: {
         ecma: 6,
-        semicolons: false,
+        semicolons: opts.compress,
         beautify: false,
+        braces: true,
         preamble: "/* minified Bot Land script */"
     }
 };
