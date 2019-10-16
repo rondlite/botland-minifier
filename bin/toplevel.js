@@ -1,1 +1,0 @@
-["alarmTargetX","alarmTargetY"]

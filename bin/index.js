@@ -33,7 +33,7 @@ var options = {
     warnings: "verbose",
     mangle: {
     toplevel: true,
-    reserved: ['debugLog']
+    reserved: ['debugLog','console']
     }, 
     compress: {
     passes: 1,
@@ -71,24 +71,22 @@ const ast=result.ast;
 
 const scriptFuncs=ast.globals.map(g=> g.name);
 
-//console.log(scriptFuncs);
+//pass to get rid of console output
+ code = Terser.minify(code,options);
+code=code.code;
+
 let manglable=_.difference(scriptFuncs,toplevel);
-//let manglable = toplevel;
-//console.log(manglable);
+
 manglable = _.trimStart(manglable,"[");
 manglable = _.trimEnd(manglable,"]");
 manglable = "var "+manglable+";";
 manglable = manglable + code;
 
-//console.log(manglable);
-
-console.log(manglable);
 
 let finalResult = Terser.minify(manglable,options);
 
-//console.log(finalResult);
 
-finalResult.code=finalResult.code.substring(finalResult.code.indexOf('init')-4, finalResult.code.length);
+finalResult.code=finalResult.code.substring(finalResult.code.indexOf('init'), finalResult.code.length);
 
 if(!opts.screen)fs.writeFileSync(outputFile,finalResult.code);
 
