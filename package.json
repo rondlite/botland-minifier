@@ -1,6 +1,6 @@
 {
   "name": "botland-minifier",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A Minifier for Botland scripts",
   "main": "bin/index.js",
   "bin": {
@@ -11,7 +11,8 @@
   "url" : "https://github.com/rondlite/botland-minifier"
 },
   "dependencies": {
-    "terser": "^4.3.8",
+    "uglify-js": "^3.6.0",
+    "lodash": "^4.17.15",
     "filesystem": "^1.0.0",
     "yargs": "^13.2.0",
     "chalk": "^2.4.2"
@@ -26,6 +27,8 @@
     "botland",
     "bot",
     "minifier",
-    "terser"
+    "uglify-js",
+    "terser",
+    "game tool"
   ]
 }
