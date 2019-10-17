@@ -1,4 +1,4 @@
-## Botland Minifier
+## Bot Land Minifier
 
 Install:  npm install -g botland-minifier
 
@@ -12,7 +12,7 @@ Options:
 
 -  --version     Show version number                                    [boolean]
 
--  -i, --input   Botland script to minify                     [string] [required]
+-  -i, --input   Bot Land script to minify                     [string] [required]
 
 -  -o, --output  Minified output filename                                [string]
 
