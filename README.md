@@ -45,7 +45,7 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2019 [Ron D. Lite](https://github.com/rondlite).
 
-This project is [ISC](https://github.com/rondlite/botland-minifier/blob/master/LICENSE) licensed.
+This project is [The Unlicense](https://github.com/rondlite/botland-minifier/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
