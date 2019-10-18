@@ -2,7 +2,7 @@
 ![Version](https://img.shields.io/badge/version-2.1.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/rondlite/botland-minifier#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rondlite/botland-minifier/graphs/commit-activity)
-[![License: ISC](https://img.shields.io/github/license/rondlite/Bot Land Minifier)](https://github.com/rondlite/botland-minifier/blob/master/LICENSE)
+[![License: ISC](https://img.shields.io/github/license/rondlite/minifier)](https://github.com/rondlite/botland-minifier/blob/master/LICENSE)
 
 > A Minifier for Bot Land scripts
 
