@@ -18,11 +18,11 @@ npm install -g botland-minifier
 blify --help
 ```
 
-## Run tests
+## Windows / MacOS / Linux
 
-```sh
-npm run test
-```
+
+### Install binary for your platfom from the [Github](https://github.com/rondlite/botland-minifier/) page
+
 
 ## Author
 
