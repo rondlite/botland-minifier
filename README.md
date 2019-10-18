@@ -5,7 +5,7 @@
 [![License: ISC](https://img.shields.io/github/license/rondlite/minifier)](https://github.com/rondlite/botland-minifier/blob/master/LICENSE)
 
 > A Minifier for Bot Land scripts
-Comes with clipboard output and several options. Multi-platform.
+> Comes with clipboard output and several options. Multi-platform.
 
 ## Install
 
