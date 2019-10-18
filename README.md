@@ -17,12 +17,34 @@ npm install -g botland-minifier
 ```sh
 blify --help
 ```
+All options (including screen output and copy to clipboard) are described us
+
+```
+
+Options:
+  --help          Show help                                            [boolean]
+  --version       Show version number                                  [boolean]
+  -i, --input     Bot Land script to minify                  [string] [required]
+  -o, --output    Minified output filename                              [string]
+  -s, --screen    Echoes the output to the screen/clipboard, no file output
+                                                                       [boolean]
+  -v, --verbose   Shows warnings                                       [boolean]
+  -c, --compress  Add semicolons and compress script to one line       [boolean]
+  -d, --debug     Do not remove debugLog (for debugging)               [boolean]
+
+Examples:
+  blify -i defense.js -o defense.min.js
+  blify -i defense.js  -> will create defense.min.js
+
+made for Bot Land https://bot.land - Bot Land username: Ron - no copyright 2019
+
+```
 
 ## Windows / MacOS / Linux
 
 
-### Install binary for your platfom from the [Github](https://github.com/rondlite/botland-minifier/) page
-
+### Download binary for your platfom from the [Github](https://github.com/rondlite/botland-minifier/) page
+Rename to `blify.exe` or `blify` after download for ease of use.
 
 ## Author
 
