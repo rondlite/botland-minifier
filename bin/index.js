@@ -109,7 +109,7 @@ manglable = manglable + code;
 
 let finalResult = Terser.minify(manglable,options);
 
-finalResult.code=finalResult.code.substring(finalResult.code.indexOf('init'), finalResult.code.length);
+finalResult.code=finalResult.code.substring(finalResult.code.indexOf('*/')+1, finalResult.code.length);
 
 finalResult.code="/* Bot Land minified script */\n"+finalResult.code;
 
