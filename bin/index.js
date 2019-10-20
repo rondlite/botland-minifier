@@ -93,6 +93,8 @@ try{
 
   const ast=result.ast;
 
+console.log(ast);
+console.log(result);
   const scriptFuncs=ast.globals.map(g=> g.name);
 
 //pass to get rid of console output
