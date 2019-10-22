@@ -93,8 +93,8 @@ try{
 
   const ast=result.ast;
 
-console.log(ast);
-console.log(result);
+//console.log(ast);
+//console.log(result);
   const scriptFuncs=ast.globals.map(g=> g.name);
 
 //pass to get rid of console output
@@ -111,7 +111,8 @@ manglable = manglable + code;
 
 let finalResult = Terser.minify(manglable,options);
 
-finalResult.code=finalResult.code.substring(finalResult.code.indexOf('*/')+1, finalResult.code.length);
+let indexResult=finalResult.code.indexOf('init')?finalResult.code.indexOf('init'):finalResult.code.indexOf('update')
+ finalResult.code=finalResult.code.substring(indexResult, finalResult.code.length);
 
 finalResult.code="/* Bot Land minified script */\n"+finalResult.code;
 
