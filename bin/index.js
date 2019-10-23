@@ -63,6 +63,7 @@ try{
       sequences: false,
       conditionals: false,
       drop_console: true,
+      collapse_vars: false,
       dead_code:true,
       loops: false
     },
@@ -92,7 +93,12 @@ try{
   );
 
   const ast=result.ast;
+if(!ast){
+console.log(chalk.red("Invalid Bot Land Script"));
+console.log(chalk.redBright(result.error));
+return false;
 
+}
 //console.log(ast);
 //console.log(result);
   const scriptFuncs=ast.globals.map(g=> g.name);
