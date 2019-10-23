@@ -1,0 +1,22 @@
+// put this file in AppData\Roaming\Sublime Text 3\Packages\User\
+// make sure you have renamed the binary to blify and added it to your path, so your OS can find it.
+
+{
+	"cmd": ["blify","-s","-i","$file_name"],
+    "working_dir": "$file_path",	
+    "variants":[
+      {
+      	"name": "Bot Land compressed",
+      	"cmd": ["blify","-c","-s","-i","$file_name"],
+        "working_dir": "$file_path",
+      },
+      {
+      	"name": "Bot Land to minified file",
+      	"cmd": ["blify","-i","$file_name"],
+        "working_dir": "$file_path",
+    
+      }
+
+    ]
+}
+
