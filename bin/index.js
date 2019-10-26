@@ -56,7 +56,7 @@ try{
     warnings: "verbose",
     mangle: {
       toplevel: true,
-      reserved: ['debugLog','console']
+      reserved: ['debugLog','console','y','x']
     },
     compress: {
       passes: 1,
@@ -96,6 +96,7 @@ try{
 if(!ast){
 console.log(chalk.red("Invalid Bot Land Script"));
 console.log(chalk.redBright(result.error));
+console.log(chalk.redBright(result));
 return false;
 
 }
