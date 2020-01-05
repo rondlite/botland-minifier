@@ -1,6 +1,6 @@
 {
   "name": "botland-minifier",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "A Minifier for Bot Land scripts",
   "main": "bin/index.js",
   "bin": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/rondlite/botland-minifier"
   },
   "files": [
-    "./bin/toplevel.json"
+    "bin/toplevel.json"
   ],
   "dependencies": {
     "chalk": "^3.0.0",

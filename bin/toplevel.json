@@ -121,5 +121,6 @@
   "repair",
   "fireLasers",
   "fireArtillery",
-  "fireMissiles"
+  "fireMissiles",
+  "turnNumber"
 ]
