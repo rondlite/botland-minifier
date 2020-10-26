@@ -20,7 +20,7 @@
     "lodash": "^4.17.15",
     "terser": "^4.3.9",
     "uglify-js": "^3.6.1",
-    "yargs": "^15.0.0"
+    "yargs": "^16.0.0"
   },
   "devDependencies": {},
   "author": "Ron D. Lite",
